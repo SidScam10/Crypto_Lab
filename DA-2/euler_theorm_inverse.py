@@ -3,7 +3,7 @@ def gcd(a,b):
             return a
         else:
             return gcd(b,a%b)
-def phi(a,n):
+def phi(n):
     res=1
     for i in range(2,n):
         if(gcd(n,i)==1):
@@ -13,5 +13,5 @@ def phi(a,n):
 a=int(input("Enter a value: "))
 m=int(input("Enter m value: "))
 
-a_inv=a^(phi(a,m)-1)%m
+a_inv=a**(phi(m)-1)%m
 print(f"Multiplicative Inverse using Euler's Theorm: {a_inv}")
