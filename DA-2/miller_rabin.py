@@ -1,4 +1,5 @@
 n=int(input("Enter n value: "))
+a=int(input("Enter Base Value: "))
 n_minus=n-1
 k=0
 while(n_minus!=0):
@@ -6,7 +7,6 @@ while(n_minus!=0):
     k+=1
 n_minus=n-1
 m=n_minus//(2**k)
-a=2
 T=(a**m)%n
 def miller_rabin_test(T):
     if(T==-1 or T==1):
