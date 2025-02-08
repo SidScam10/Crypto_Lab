@@ -13,7 +13,11 @@ for mi in m:
 x = 0
 for i in range(n):
     Mi = M // m[i]
-    Mi_inv = pow(Mi, -1, m[i])
+    try:
+        Mi_inv = pow(Mi, -1, m[i])
+    except:
+        print("Inverse does not exist")
+        exit()
     x += a[i] * Mi * Mi_inv
 
 x = x % M

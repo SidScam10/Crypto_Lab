@@ -1,3 +1,4 @@
+
 a=int(input("Enter base: "))
 i=int(input("Enter exponent: "))
 n=int(input("Enter modulo: "))
