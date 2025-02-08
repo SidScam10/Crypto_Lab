@@ -1,24 +1,3 @@
-'''
-a1=int(input("Enter a1: "))
-a2=int(input("Enter a2: "))
-a3=int(input("Enter a3: "))
-
-m1=int(input("Enter m1: "))
-m2=int(input("Enter m2: "))
-m3=int(input("Enter m3: "))
-
-M=m1*m2*m3
-M1=M//m1
-M2=M//m2
-M3=M//m3
-
-M1_inv = pow(M1, -1, m1)
-M2_inv = pow(M2, -1, m2)
-M3_inv = pow(M3, -1, m3)
-
-x=(a1*M1*M1_inv + a2*M2*M2_inv + a3*M3*M3_inv)%M
-print(f"Value of x: {x}")
-'''
 n = int(input("Enter the number of equations: "))
 
 a = []
