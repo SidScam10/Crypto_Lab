@@ -10,20 +10,20 @@ def s_box_substitution(bits, s_boxes):
         output.extend(f"{s_boxes[i][row][col]:02b}")
     return list(map(int, output))
 
-p8_table = [3, 5, 2, 7, 4, 8, 6, 1]
+bits=[]
+for i in range(8):
+    bits.append(int(input(f"Enter value for bit {i+1}:")))
 
-s_boxes = [
-    [[1, 0, 3, 2],
-     [3, 2, 1, 0],
-     [0, 2, 1, 3],
-     [3, 1, 0, 2]],
-    [[0, 1, 2, 3],
-     [2, 0, 1, 3],
-     [3, 0, 1, 2],
-     [2, 1, 0, 3]]
-]
-
-bits = [1, 0, 1, 1, 0, 1, 0, 0]
+p8_table = []
+print("Enter values for P8 Table:")
+for i in range(8):
+    p8_table[i] = int(input("Enter value:"))
+    
+s_boxes=[]
+for i in range(2):
+    for j in range(4):
+        for k in range(4):
+            s_boxes[i][j][k] = int(input(f"Enter value for S-box {i+1} row {j} column {k}:"))
 
 permuted_bits = p8_permutation(bits, p8_table)
 substituted_bits = s_box_substitution(permuted_bits, s_boxes)  
