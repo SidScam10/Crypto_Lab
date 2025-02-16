@@ -1,0 +1,11 @@
+digraph {
+	User [label=User]
+	Target [label=Target]
+	Scan [label=Scan]
+	Exploitation [label=Exploitation]
+	Report [label=Report]
+	User -> Target [label=manages]
+	Target -> Scan [label=undergoes]
+	Scan -> Exploitation [label="may lead to"]
+	Scan -> Report [label=generates]
+}

@@ -7,7 +7,7 @@ def gcd(a,b):
 a=int(input("Enter a value: "))
 n=int(input("Enter n value: "))
 if(gcd(a,n)!=1):
-    print("Euler's Multiplicative Inverse not possible")
+    print("Extended Euclidean's Multiplicative Inverse not possible")
     exit()
 r1=n
 r2=a
