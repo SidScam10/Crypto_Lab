@@ -20,7 +20,6 @@ def elgamal_decrypt(q, Xa, C1, C2):
     plaintext=(C2*K_inv)%q
     return plaintext
 
-print("Siddhanth Monnappa\t22BCE3061\n")
 q=int(input("Enter q: "))
 alpha=int(input("Enter alpha: "))
 Xa=int(input("Enter Xa: "))
@@ -30,3 +29,4 @@ M=int(input("Enter plaintext: "))
 Ya, C1, C2=elgamal_encrypt(q, alpha, Xa, k, M)
 decrypted_text=elgamal_decrypt(q, Xa, C1, C2)
 print(f"\nYa: {Ya}\nCi: ({C1},{C2})")
+print(f"Decrypted Text: {decrypted_text}")

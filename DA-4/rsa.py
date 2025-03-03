@@ -10,7 +10,6 @@ def totient(n):
             res+=1
     return res
 
-print("Siddhanth Monnappa\t22BCE3061\n")
 p=int(input("Enter p: "))
 q=int(input("Enter q: "))
 e=int(input('Enter e: '))

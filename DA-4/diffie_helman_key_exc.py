@@ -1,5 +1,3 @@
-print("Siddhanth Monnappa\t22BCE3061\n")
-
 q=int(input('Enter q: '))
 alpha=int(input('Enter alpha: '))
 alpha=alpha%q
