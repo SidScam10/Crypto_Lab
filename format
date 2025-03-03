@@ -402,7 +402,7 @@ a = int(input("Enter Base value:"))
 n_minus=n-1
 k=0
 while n_minus%2==0:
-    n_minus  =2
+    n_minus//=2
     k+=1
 
 m=(n-1)//(2**k)
