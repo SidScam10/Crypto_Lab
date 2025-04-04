@@ -188,7 +188,7 @@ def sha512(message: str) -> str:
 
 def main():
     # Test cases
-    test_messages = ["Hello, world!", "Tanishq Anand", "22BCE0508"]
+    test_messages = ["23,11,5,7,3,4", "Tanishq Anand", "22BCE0508"]
 
     # Compute and print hashes
     for msg in test_messages:
